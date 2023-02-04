@@ -1,4 +1,5 @@
 const { Client, Collection } = require("discord.js");
+const config = require("./config")
 const commands = new Collection();
 const aliases = new Collection();
 const { readdirSync } = require("fs")
@@ -8,6 +9,8 @@ client.container = {
   commands,
   aliases
 };
+client.config = config;
+
 module.exports = class Bot {
     constructor({token}){
         if(!token) throw new Error("[LOG] Write Bot Token")

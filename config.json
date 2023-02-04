@@ -1,5 +1,12 @@
 {
     "token":"",
-    "prefix":"!"
+    "prefix":"!",
+    "OPENAI_API_KEY":"",
 
+    "presence":{
+        "title":"By Only Cheeini"
+    },
+    "messages":{
+        "writeQuestion":":x: Write a question"
+    }
 }
